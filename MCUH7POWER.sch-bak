@@ -39,8 +39,6 @@ F 5 "Farnell" H 12750 2450 50  0001 C CNN "Supplier"
 	1    12750 2450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13350 1450 13650 1450
 Text Label 15250 1450 2    50   ~ 0
 VBUS
 $Comp
@@ -59,9 +57,6 @@ F 6 "0603" V 13600 1800 25  0000 C CNN "Size"
 $EndComp
 Wire Wire Line
 	13350 1650 13450 1650
-Wire Wire Line
-	13650 1650 13650 1450
-Connection ~ 13650 1450
 $Comp
 L power:GND #PWR0130
 U 1 1 601F57D5
@@ -1807,8 +1802,6 @@ F 6 "0603" H 13992 1459 25  0000 L CNN "Size"
 	1    13900 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13650 1450 13900 1450
 Connection ~ 13900 1450
 Wire Wire Line
 	13900 1450 14950 1450
@@ -1840,6 +1833,13 @@ F 6 "0603" H 13742 6459 25  0000 L CNN "Size"
 	1    13650 6550
 	1    0    0    -1  
 $EndComp
-Text Notes 11700 1100 0    118  ~ 0
+Text Notes 10450 1500 0    118  ~ 0
 CHYBA\n\nCC1 5k1 na zem\nCC2 1k0 na zem
+Wire Wire Line
+	13650 1450 13900 1450
+Wire Wire Line
+	13350 1450 13650 1450
+Connection ~ 13650 1450
+Wire Wire Line
+	13650 1650 13650 1450
 $EndSCHEMATC
